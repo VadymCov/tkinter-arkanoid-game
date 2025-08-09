@@ -1,5 +1,7 @@
 # Arkanoid Game
 
+![images](images/Screenshot.jpg)
+
 Classic Arkanoid game implemented in Python using the Tkinter library.
 
 ## Description
