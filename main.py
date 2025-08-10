@@ -14,7 +14,7 @@ class ArkanoidGame:
         self.game_running = False
         self.life = 3
         self.score = 0
-        self.lvl = 0
+        self.lvl = 1
         self.row = -1
 
         self.display_interface()
@@ -60,7 +60,6 @@ class ArkanoidGame:
                     outline = "indianred3"
                 )
                 self.bricks.append(brick)
-            self.lvl += 1
 
     def create_pad(self):
         self.pad_width = 70
@@ -203,6 +202,7 @@ class ArkanoidGame:
                 fill= "darksalmon"
             )
             self.game_running = False
+            self.lvl += 1
             self.countdown_to_restart(5)
 
     def update_ui(self):
